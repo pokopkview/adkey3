@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.joyplus.adkey.test" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="17" />
+
+    <instrumentation
+        android:name="android.test.InstrumentationTestRunner"
+        android:functionalTest="false"
+        android:handleProfiling="false"
+        android:label="Tests for com.joyplus.adkey.test"
+        android:targetPackage="com.joyplus.adkey.test" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+ <!-- Optional. This permission allow us to send the device id to uniquely identified that device -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+ <!-- Optional. This permission allow us to send the network connection type and provide better ads -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+ <!-- Optional. This permission allow us to send the device location and provide more targeted ads -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+ <!-- Optional. This permission allow us to send the device location and provide more targeted ads -->
+    <uses-permission android:name="android.permission.ACCESS_COURSE_LOCATION" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <application android:debuggable="true" >
+        <uses-library android:name="android.test.runner" />
+
+        <activity
+            android:name="com.adsdk.sdk.video.RichMediaActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation" />
+        <activity android:name="com.adsdk.sdk.banner.InAppWebView" />
+    </application>
+
+</manifest>

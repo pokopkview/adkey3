@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="fasthttp">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/app/libs/fasthttp.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

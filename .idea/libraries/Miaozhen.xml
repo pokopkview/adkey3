@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="Miaozhen">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/app/libs/Miaozhen.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
